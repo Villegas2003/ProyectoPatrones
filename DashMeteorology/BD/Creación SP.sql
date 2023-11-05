@@ -1,0 +1,12 @@
+create procedure CRE_CITY
+(
+	@C_Name NVARCHAR(100),
+	@C_COUNTRY NVARCHAR(100),
+	@C_LATITUDE FLOAT,
+	@C_LONGITUDE FLOAT
+)
+AS
+BEGIN
+	insert into Cities(Name, COUNTRY, LATITUDE, LONGITUDE)
+	values(@C_Name, @C_COUNTRY, @C_LATITUDE, @C_LONGITUDE)
+end;

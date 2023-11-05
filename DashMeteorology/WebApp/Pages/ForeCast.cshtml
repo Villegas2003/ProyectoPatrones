@@ -1,0 +1,69 @@
+﻿@page
+@model WebApp.Pages.ForeCastcshtmlModel
+@{
+}
+<script src="~/js/pages/ForeCast.js"></script>
+<div class="bs-docs-section">
+    <br />
+
+    <div class="row">
+        <legend>Fore Cast List</legend>
+        <div class="col-lg-12">
+
+            <table id="tblListForeCast" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Date</th>
+                        <th>Max Temperature</th>
+                        <th>Min Temperature</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="bs-component">
+                <form>
+                    <fieldset>
+                        <legend>ForeCast registration form</legend>
+
+                        <div class="form-group">
+                            <label for="txtIdFore" class="form-label mt-4">ForeCast ID</label>
+                            <input id="txtId" type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+
+
+                            <label for="txtDateFore" class="form-label mt-4">Date</label>
+                            <input type="date" class="form-control" id="txtDateFore" aria-describedby="emailHelp" placeholder="Enter Date">
+                            <small id="emailHelp" class="form-text text-muted">Date.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="numMaxTemperatureFore" class="form-label mt-4">Max Temperature</label>
+                            <input type="number" class="form-control" id="numMaxTemperatureFore" aria-describedby="emailHelp" placeholder="Enter max temperature">
+                            <small id="emailHelp" class="form-text text-muted">Max Temperature</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="numMinTemperatureFore" class="form-label mt-4">Min Temperature</label>
+                            <input type="number" class="form-control" id="numMinTemperatureFore" aria-describedby="emailHelp" placeholder="Enter Min Temperature">
+                            <small id="emailHelp" class="form-text text-muted">Min Temperature.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtConditionFore" class="form-label mt-4">Condition</label>
+                            <input type="text" class="form-control" id="txtConditionFore" aria-describedby="emailHelp" placeholder="Enter Condition">
+                            <small id="emailHelp" class="form-text text-muted">Soleado, Lluvioso, Nublado</small>
+                        </div>
+
+                </form>
+                <br />
+                <button id="btnCreateForeCast" class="source-button btn btn-primary btn-xs" type="button" tabindex="0"><i class="bi bi-code">Save</i></button>
+
+                <button id="btnUpdateForeCast" class="source-button btn btn-warning btn-xs" type="button" tabindex="0"><i class="bi bi-code">Update</i></button>
+
+                <button id="btnDeleteForeCast" class="source-button btn btn-danger btn-xs" type="button" tabindex="0"><i class="bi bi-code">Delete</i></button>
+            </div>
+        </div>
+    </div>
+</div>

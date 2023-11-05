@@ -1,0 +1,17 @@
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\CoreApp.deps.json
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\CoreApp.dll
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\CoreApp.pdb
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\DataAccess.dll
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\DTOs.dll
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\bin\Debug\net6.0\DTOs.pdb
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.csproj.AssemblyReference.cache
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.AssemblyInfoInputs.cache
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.AssemblyInfo.cs
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.csproj.CoreCompileInputs.cache
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.csproj.CopyComplete
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.dll
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\refint\CoreApp.dll
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\CoreApp.pdb
+C:\Users\Malcom Quiros\Documents\Proyecto 2\DashMeteorology\CoreApp\obj\Debug\net6.0\ref\CoreApp.dll
