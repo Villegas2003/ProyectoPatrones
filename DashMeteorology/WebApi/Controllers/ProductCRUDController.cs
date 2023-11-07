@@ -6,18 +6,18 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CitieCRUDController : ControllerBase
+    public class ProductCRUDController : ControllerBase
     {
 
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create(Product citie)
+        public async Task<IActionResult> Create(Product product)
         {
             var um = new ProductManager();
             try
             {
-                um.Create(citie);
-                return Ok(citie);
+                um.Create(product);
+                return Ok(product);
             }
             catch (Exception ex)
             {
@@ -29,14 +29,14 @@ namespace WebApi.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(Product citie)
+        public async Task<IActionResult> Delete(Product product)
         {
             var um = new ProductManager();
 
             try 
             {
-                um.Delete(citie);
-                return Ok(citie);
+                um.Delete(product);
+                return Ok(product);
             }catch(Exception ex) 
             {
                 return StatusCode(500, ex.Message);
@@ -48,13 +48,13 @@ namespace WebApi.Controllers
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(Product citie)
+        public async Task<IActionResult> Update(Product product)
         {
             var um = new ProductManager();
             try
             {
-                um.Update(citie);
-                return Ok(citie);
+                um.Update(product);
+                return Ok(product);
             }
             catch (Exception ex)
             {
