@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3MUQstGf9t2DrlZT6B1CrZs2333VQo480Cvw5HBTXHwrWSPJxbMMq2T5UiQLCFXw0zflW1OFIJm1o3QXYhW0yQ==",
+  "dgSpecHash": "eQBx6yz1xpvpskSPSXi6N+HW1W4avsLFDv5VuAmObjtvxj8xfAPpmLAvifXemmrW1MsJUcYDNAQjyCRKn2pSqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Malcom Quiros\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Malcom Quiros\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

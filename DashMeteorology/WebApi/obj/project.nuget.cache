@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uJmEdE1Nq+khBG+0OEES6qVd2BqNpauvDH6rOSACg9zTCryoyTVnAODDMy8Dz+ny34dmaRT8QDcSTM4WyJ8/4w==",
+  "dgSpecHash": "TPACPujkj1acDo1DvOrZkQikZOzyo4rvYm7+dNdYxKMEuqdaPozcCwDyRMe0inO2DMY8l3DxgR91wdF5ZaDaLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Malcom Quiros\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Malcom Quiros\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\CoreApp.csproj": {
+    "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\CoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\CoreApp.csproj",
+        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\CoreApp.csproj",
         "projectName": "CoreApp",
-        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\CoreApp.csproj",
+        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\CoreApp.csproj",
         "packagesPath": "C:\\Users\\Malcom Quiros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\obj\\",
+        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj"
+              "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Malcom Quiros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -104,8 +104,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj"
+              "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj"
               }
             }
           }
@@ -149,14 +149,14 @@
         }
       }
     },
-    "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj": {
+    "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj",
+        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj",
         "packagesPath": "C:\\Users\\Malcom Quiros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\obj\\",
+        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -208,14 +208,14 @@
         }
       }
     },
-    "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\WebApi\\WebApi.csproj",
+        "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\WebApi\\WebApi.csproj",
         "packagesPath": "C:\\Users\\Malcom Quiros\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\WebApi\\obj\\",
+        "outputPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -236,11 +236,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\CoreApp.csproj": {
-                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\CoreApp.csproj"
+              "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\CoreApp.csproj": {
+                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\CoreApp.csproj"
               },
-              "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj": {
-                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj"
+              "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj": {
+                "projectPath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj"
               }
             }
           }

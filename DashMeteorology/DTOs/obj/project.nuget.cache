@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iadFqbYMsxzFvAAgX5oUEaOq4s6sFlHfbMCECelJcVpOLkZ8oqz+tqxaNytayX/7hzg6qJPa7UeM+OE5FrhbEw==",
+  "dgSpecHash": "pbG+a69w54sSG2sa1OlU7lqbplq7r1AwNp6yIHtn/k7fR1hC43n+wggwJb0d4ssegfMebZgNOoAmZ9FecAj0jQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\DTOs\\DTOs.csproj",
+  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\DTOs\\DTOs.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

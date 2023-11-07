@@ -11,9 +11,9 @@ namespace WebApi.Controllers
 
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create(CitieDTO citie)
+        public async Task<IActionResult> Create(Product citie)
         {
-            var um = new CitieManager();
+            var um = new ProductManager();
             try
             {
                 um.Create(citie);
@@ -29,9 +29,9 @@ namespace WebApi.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(CitieDTO citie)
+        public async Task<IActionResult> Delete(Product citie)
         {
-            var um = new CitieManager();
+            var um = new ProductManager();
 
             try 
             {
@@ -48,9 +48,9 @@ namespace WebApi.Controllers
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(CitieDTO citie)
+        public async Task<IActionResult> Update(Product citie)
         {
-            var um = new CitieManager();
+            var um = new ProductManager();
             try
             {
                 um.Update(citie);
@@ -68,7 +68,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new CitieManager();
+                var um = new ProductManager();
                 return Ok(um.RetrieveAll());
             }
             catch (Exception ex)

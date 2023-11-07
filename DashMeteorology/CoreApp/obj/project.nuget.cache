@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K6cKGGUcKmWVrUU8gGr/Q7fepgD1YuTJDiJmrFeQwghaswb7NWL6eXH1/GKqGkKopsyxoXw+JAGzT40COKiTfA==",
+  "dgSpecHash": "DNrjZnGOsNsOTJDHd6cBzuMbMQl7hk3SRto2aJ6rw4t7zhQbK6EXalfV6GDDlhnP/ikPoTSD+NJP0SymhMrfzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\Proyecto 2\\DashMeteorology\\CoreApp\\CoreApp.csproj",
+  "projectFilePath": "C:\\Users\\Malcom Quiros\\Documents\\PrograPatrones\\ProyectoPatrones\\DashMeteorology\\CoreApp\\CoreApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Malcom Quiros\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Malcom Quiros\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
