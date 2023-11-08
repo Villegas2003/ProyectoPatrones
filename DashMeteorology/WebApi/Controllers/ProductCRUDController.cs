@@ -6,7 +6,7 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CitieCRUDController : ControllerBase
+    public class ProductCRUDController : ControllerBase
     {
 
         [HttpPost]
