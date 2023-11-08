@@ -1,60 +1,61 @@
-using CoreApp;
+﻿using CoreApp;
 using DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductCRUDController : ControllerBase
+    public class RouteOpcCRUDController : ControllerBase
     {
-
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create(Product product)
+        public async Task<IActionResult> Create(RouteOpc route)
         {
-            var um = new ProductManager();
+            var um = new RouteManagerOpc();
             try
             {
-                um.Create(product);
-                return Ok(product);
+                um.Create(route);
+                return Ok(route);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
-            
-           
+
+
         }
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(Product product)
+        public async Task<IActionResult> Delete(RouteOpc route)
         {
-            var um = new ProductManager();
+            var um = new RouteManagerOpc();
 
-            try 
+            try
             {
-                um.Delete(product);
-                return Ok(product);
-            }catch(Exception ex) 
+                um.Delete(route);
+                return Ok(route);
+            }
+            catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
 
-            
-            
+
+
         }
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(Product product)
+        public async Task<IActionResult> Update(RouteOpc route)
         {
-            var um = new ProductManager();
+            var um = new RouteManagerOpc();
             try
             {
-                um.Update(product);
-                return Ok(product);
+                um.Update(route);
+                return Ok(route);
             }
             catch (Exception ex)
             {
