@@ -1,5 +1,6 @@
 ﻿using CoreApp;
 using DTOs;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
@@ -7,17 +8,17 @@ namespace WebApi.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class CurrentDataCrudController : ControllerBase
+    public class RouteCrudController : ControllerBase
     {
         [HttpPost]
         [Route("Create")]
-      public async Task<IActionResult> Create(CurrentDataDTO currentData)
+      public async Task<IActionResult> Create(Route route)
       {
-            var um = new CurrentDataManager();
+            var um = new RouteManager();
             try
             {
-                um.Create(currentData);
-                return Ok(currentData);
+                um.Create(route);
+                return Ok(route);
             }
             catch (Exception ex) 
             {
@@ -27,13 +28,13 @@ namespace WebApi.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(CurrentDataDTO currentData)
+        public async Task<IActionResult> Delete(Route route)
         {
-            var um = new CurrentDataManager();
+            var um = new RouteManager();
             try
             {
-                um.Delete(currentData);
-                return Ok(currentData);
+                um.Delete(route);
+                return Ok(route);
             }catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
@@ -42,13 +43,13 @@ namespace WebApi.Controllers
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(CurrentDataDTO currentData)
+        public async Task<IActionResult> Update(Route route)
         {
-            var um = new CurrentDataManager();
+            var um = new RouteManager();
             try
             {
-                um.Update(currentData);
-                return Ok(currentData);
+                um.Update(route);
+                return Ok(route);
             } catch (Exception ex) 
             { 
                 return StatusCode(500, ex.Message);
@@ -61,7 +62,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new CurrentDataManager();
+                var um = new RouteManager();
                 return Ok(um.RetrieveAll());
             }
             catch(Exception ex)
