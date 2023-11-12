@@ -15,12 +15,12 @@ namespace CoreApp
 
         public void Create(Route route)
         {
-            if (string.IsNullOrWhiteSpace(route.Name))
+            if (route.Name == null)
             {
                 throw new ArgumentException("Route name is required.");
             }
 
-            if (string.IsNullOrWhiteSpace(route.Distance))
+            if (route.Distance == null)
             {
                 throw new ArgumentException("Route distance is required.");
             }
@@ -30,34 +30,42 @@ namespace CoreApp
                 throw new ArgumentException("Distance must be a valid number with up to 2 decimal places.");
             }
 
-            if (string.IsNullOrWhiteSpace(route.TransportUnit))
+            if (route.TransportUnit == null)
             {
                 throw new ArgumentException("Transport unit is required.");
             }
 
-            if (string.IsNullOrWhiteSpace(route.Startpoint))
+            if (route.Startpoint == null)
             {
                 throw new ArgumentException("Starting point is required.");
             }
 
-            if (string.IsNullOrWhiteSpace(route.Finalpoint))
+            if (route.Finalpoint == null)
             {
                 throw new ArgumentException("Final point is required.");
             }
-            /*var fc = new ForeCastCRUDFactory();
-            fc.Create(foreCast);*/
+            var rm = new RouteCRUDFactory();
+            rm.Create(route);
         }
 
         public void Delete(Route route)
         {
-            /*var fc = new ForeCastCRUDFactory();
-            fc.Delete(foreCast);*/
+            if (route.Id == null)
+            {
+                throw new Exception("The Id cannot be null");
+            }
+            var rm = new RouteCRUDFactory();
+            rm.Delete(route);
         }
 
         public void Update(Route route)
         {
-            /*var fc = new ForeCastCRUDFactory();
-            fc.Update(foreCast);*/
+            if (route.Id == null)
+            {
+                throw new Exception("The Id cannot be null");
+            }
+            var rm = new RouteCRUDFactory();
+            rm.Update(route);
         }
 
         public object? RetrieveAll()
