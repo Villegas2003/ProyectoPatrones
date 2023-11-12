@@ -1,4 +1,6 @@
-﻿using DataAccess;
+﻿
+
+using DataAccess;
 using DTOs;
 using System;
 using System.Collections.Generic;
@@ -17,17 +19,17 @@ namespace CoreApp
 
         public void Create(Carriers carriers) 
         {
-            if (string.IsNullOrWhiteSpace(carriers.Name))
+            if (carriers.Name == null)
             {
                 throw new ArgumentException("Name is required.");
             }
-
-            if (string.IsNullOrWhiteSpace(carriers.CarRegistration))
+            var allowedCondition = new List<string> {"Hino", "Walking", "Motorbike", "Hilux" };
+            if (!allowedCondition.Contains(carriers.VehicleType))
             {
-                throw new ArgumentException("Car registration is required.");
+                throw new ArgumentException("The type of vehicle must be; Hino, Walking, Motorbike, Hilux");
             }
 
-            if (string.IsNullOrWhiteSpace(carriers.VehicleType))
+            if (carriers.VehicleType == null)
             {
                 throw new ArgumentException("Vehicle type is required.");
             }
@@ -36,12 +38,32 @@ namespace CoreApp
             {
                 throw new ArgumentException("Ability must be a positive number.");
             }
+
+            var cm = new CarriersCRUDFactory();
+            cm.Create(carriers);
         }
 
         public void Delete(Carriers carriers)
         {
-            /*var cd = new CurrentDataCRUDFactory(); cd.Delete(currentData)*/
-            throw new NotImplementedException();
+            if(carriers.Id == null)
+            {
+                throw new Exception("The Id cannot be null");
+            }
+            var cm = new CarriersCRUDFactory();
+            cm.Delete(carriers);
+            
+        }
+
+        public void Update(Carriers carriers)
+        {
+            if(carriers.Id == null)
+            {
+                throw new Exception("The Id cannot be null");
+
+                var cm = new CarriersCRUDFactory();
+                cm.Update(carriers);
+            }
+            
         }
 
         public object? RetrieveAll()
@@ -49,12 +71,6 @@ namespace CoreApp
             /*var ct = new CurrentDataCRUDFactory();
 
             return ct.RetrieveAll<CurrentDataDTO>();*/
-            throw new NotImplementedException();
-        }
-
-        public void Update(Carriers carriers)
-        {
-
             throw new NotImplementedException();
         }
     }

@@ -10,6 +10,7 @@ namespace DTOs
     public class Route : BaseDTO
     {
         public string Name { get; set; }
+        public string Destination { get; set; }
         public string Distance { get; set; }
         public string TransportUnit { get; set; }
         public string Startpoint { get; set; }
