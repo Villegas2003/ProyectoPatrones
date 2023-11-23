@@ -13,7 +13,7 @@ namespace CoreApp
     {
         public void Create(Product product)
         {
-            if(product.Price != null)
+            if(product.Price == null)
             {
                 throw new Exception("The price of the product cannot be zero");
             }
@@ -23,29 +23,29 @@ namespace CoreApp
                 throw new Exception("The category is incorrect, it must be books, tecnology, clothing or toys");
             }
 
-            /*var ct = new ProductCRUDFactory();
-            ct.Create(product);*/
+            var pm = new ProductCRUDFactory();
+            pm.Create(product);
 
         }
 
         public void Delete(Product product)
         {
-            /*var ct = new ProductCRUDFactory();
-            ct.Delete(product);*/
+            var pm = new ProductCRUDFactory();
+            pm.Delete(product);
         }
 
         public void Update(Product product)
         {
-            /*var ct = new ProductCRUDFactory();
-            ct.Update(product);*/
+            var pm = new ProductCRUDFactory();
+            pm.Update(product);
         }
         public object? RetrieveAll()
         {
 
             throw new Exception("Hola mundo;)");
-            /*var ct = new ProductCRUDFactory();
+            var pm = new ProductCRUDFactory();
             
-            return ct.RetrieveAll<Product>();*/
+            return pm.RetrieveAll<Product>();
         }
     }
 }

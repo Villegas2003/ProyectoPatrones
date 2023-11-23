@@ -1,58 +1,62 @@
-﻿using CoreApp;
+using CoreApp;
 using DTOs;
+using Builder;
+using Builder.IBuilder;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class HistoryCRUDController : ControllerBase
+    public class ProductCRUDController : ControllerBase
     {
 
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create(HistoryDTO history)
+        public async Task<IActionResult> Create(Product product)
         {
-            var um = new HistoryManager();
+            var um = new ProductManager();
             try
             {
-                um.Create(history);
-                return Ok(history);
+                um.Create(product);
+                return Ok(product);
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
-
-
+            
+           
         }
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(HistoryDTO history)
+        public async Task<IActionResult> Delete(Product product)
         {
-            var um = new HistoryManager();
-            try
+            var um = new ProductManager();
+
+            try 
             {
-                um.Delete(history);
-                return Ok(history);
-            }
-            catch (Exception ex)
+                um.Delete(product);
+                return Ok(product);
+            }catch(Exception ex) 
             {
                 return StatusCode(500, ex.Message);
             }
 
+            
+            
         }
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(HistoryDTO history)
+        public async Task<IActionResult> Update(Product product)
         {
-            var um = new HistoryManager();
+            var um = new ProductManager();
             try
             {
-                um.Update(history);
-                return Ok(history);
+                um.Update(product);
+                return Ok(product);
             }
             catch (Exception ex)
             {
@@ -66,14 +70,13 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new HistoryManager();
+                var um = new ProductManager();
                 return Ok(um.RetrieveAll());
             }
             catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
-
         }
     }
 }

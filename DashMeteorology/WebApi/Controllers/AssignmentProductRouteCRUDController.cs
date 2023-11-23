@@ -6,18 +6,18 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ForeCastCRUDController : ControllerBase
+    public class AssignmentProductRouteCRUDController : ControllerBase
     {
 
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create(ForeCastDTO foreCast)
+        public async Task<IActionResult> Create(AssignmentProductRoute assignmentProductRoute)
         {
-            var um = new ForeCastManager();
+            var um = new AssignmentProductRouteManager();
             try
             {
-                um.Create(foreCast);
-                return Ok(foreCast);
+                um.Create(assignmentProductRoute);
+                return Ok(assignmentProductRoute);
             }
             catch (Exception ex)
             {
@@ -29,30 +29,30 @@ namespace WebApi.Controllers
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(ForeCastDTO foreCast)
+        public async Task<IActionResult> Delete(AssignmentProductRoute assignmentProductRoute)
         {
-            var um = new ForeCastManager();
+            var um = new AssignmentProductRouteManager();
             try
             {
-                um.Delete(foreCast);
-                return Ok(foreCast);
-            }catch (Exception ex)
+                um.Delete(assignmentProductRoute);
+                return Ok(assignmentProductRoute);
+            }
+            catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
-            
 
         }
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(ForeCastDTO foreCast)
+        public async Task<IActionResult> Update(AssignmentProductRoute assignmentProductRoute)
         {
-            var um = new ForeCastManager();
+            var um = new AssignmentProductRouteManager();
             try
             {
-                um.Update(foreCast);
-                return Ok(foreCast);
+                um.Update(assignmentProductRoute);
+                return Ok(assignmentProductRoute);
             }
             catch (Exception ex)
             {
@@ -66,7 +66,7 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new ForeCastManager();
+                var um = new AssignmentProductRouteManager();
                 return Ok(um.RetrieveAll());
             }
             catch (Exception ex)
