@@ -35,7 +35,7 @@ namespace DataAccess
             var product = baseDTO as Product;
 
             var sqlOperation = new SqlOperation { ProcedureName = "UP_PRODUCT" };
-            sqlOperation.AddIntParam("P_IdProduct", product.Id);
+            sqlOperation.AddIntParam("P_IdProduct", product.IdProduct);
             sqlOperation.AddVarcharParam("P_NAME", product.Name);
             sqlOperation.AddIntParam("P_PRICE", product.Price);
             sqlOperation.AddVarcharParam("P_PARTS", product.Parts);
@@ -49,8 +49,8 @@ namespace DataAccess
         {
             var product = baseDTO as Product;
 
-            var sqlOperation = new SqlOperation { ProcedureName = "DELETE_PRODUCT" };
-            sqlOperation.AddIntParam("P_IdProduct", product.Id);
+            var sqlOperation = new SqlOperation { ProcedureName = "DEL_PRODUCT" };
+            sqlOperation.AddIntParam("P_IdProduct", product.IdProduct);
 
             _dao.ExecuteProcedure(sqlOperation);
 

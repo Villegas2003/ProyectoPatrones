@@ -23,7 +23,7 @@ namespace DataAccess
             var carriers = baseDTO as Carriers;
 
             var sqlOperation = new SqlOperation { ProcedureName = "CRE_CARRIERS" };
-            sqlOperation.AddVarcharParam("R_ORIGIN", carriers.Name);
+            sqlOperation.AddVarcharParam("C_Name", carriers.Name);
             sqlOperation.AddVarcharParam("C_VEHICLE", carriers.CarRegistration);
             sqlOperation.AddVarcharParam("C_TYPE", carriers.VehicleType);
             sqlOperation.AddIntParam("C_Ability", carriers.Ability);
@@ -36,8 +36,8 @@ namespace DataAccess
             var carriers = baseDTO as Carriers;
 
             var sqlOperation = new SqlOperation { ProcedureName = "UP_CARRIERS" };
-            sqlOperation.AddIntParam("C_IdCarriers", carriers.Id);
-            sqlOperation.AddVarcharParam("R_ORIGIN", carriers.Name);
+            sqlOperation.AddIntParam("C_IdCarriers", carriers.IdCarriers);
+            sqlOperation.AddVarcharParam("C_Name", carriers.Name);
             sqlOperation.AddVarcharParam("C_VEHICLE", carriers.CarRegistration);
             sqlOperation.AddVarcharParam("C_TYPE", carriers.VehicleType);
             sqlOperation.AddIntParam("C_Ability", carriers.Ability);
@@ -50,8 +50,8 @@ namespace DataAccess
         {
             var carriers = baseDTO as Carriers;
 
-            var sqlOperation = new SqlOperation { ProcedureName = "DELETE_ROUTE" };
-            sqlOperation.AddIntParam("C_IdCarriers", carriers.Id);
+            var sqlOperation = new SqlOperation { ProcedureName = "DEL_CARRIERS " };
+            sqlOperation.AddIntParam("C_IdCarriers", carriers.IdCarriers);
 
             _dao.ExecuteProcedure(sqlOperation);
 

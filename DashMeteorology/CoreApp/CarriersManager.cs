@@ -59,11 +59,10 @@ namespace CoreApp
             if(carriers.Id == null)
             {
                 throw new Exception("The Id cannot be null");
-
-                var cm = new CarriersCRUDFactory();
-                cm.Update(carriers);
             }
-            
+            var cm = new CarriersCRUDFactory();
+            cm.Update(carriers);
+
         }
 
         public object? RetrieveAll()
