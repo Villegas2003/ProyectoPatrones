@@ -10,5 +10,10 @@ namespace DTOs
     {
         public Route Route { get; set; }
         public Product Product { get; set; }
+
+        public void Log()
+        {
+
+        }
     }
 }
