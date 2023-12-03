@@ -9,9 +9,10 @@ namespace DTOs
 {
     public class Route : BaseDTO
     {
-        public string Name { get; set; }
+        public int IdRoute { get; set; }
+        public string Origin { get; set; }
         public string Destination { get; set; }
-        public string Distance { get; set; }
+        public String Distance { get; set; }
         public string TransportUnit { get; set; }
         public string Startpoint { get; set; }
         public string Finalpoint { get; set; }

@@ -15,9 +15,9 @@ namespace CoreApp
 
         public void Create(Route route)
         {
-            if (route.Name == null)
+            if (route.Origin == null)
             {
-                throw new ArgumentException("Route name is required.");
+                throw new ArgumentException("Route origin is required.");
             }
 
             if (route.Distance == null)

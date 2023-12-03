@@ -22,7 +22,7 @@ namespace DataAccess
             var route = baseDTO as Route;
 
             var sqlOperation = new SqlOperation { ProcedureName = "CRE_ROUTE" };
-            sqlOperation.AddVarcharParam("R_ORIGIN", route.Name);
+            sqlOperation.AddVarcharParam("R_ORIGIN", route.Origin);
             sqlOperation.AddVarcharParam("R_DESTINATION", route.Destination);
             sqlOperation.AddVarcharParam("R_DISTANCE", route.Distance);
             sqlOperation.AddVarcharParam("R_TRANSPORTUNITE", route.TransportUnit);
@@ -37,8 +37,8 @@ namespace DataAccess
             var route = baseDTO as Route;
 
             var sqlOperation = new SqlOperation { ProcedureName = "UP_ROUTE" };
-            sqlOperation.AddIntParam("R_IDROUTE", route.Id);
-            sqlOperation.AddVarcharParam("R_ORIGIN", route.Name);
+            sqlOperation.AddIntParam("R_IDROUTE", route.IdRoute);
+            sqlOperation.AddVarcharParam("R_ORIGIN", route.Origin);
             sqlOperation.AddVarcharParam("R_DESTINATION", route.Destination);
             sqlOperation.AddVarcharParam("R_DISTANCE", route.Distance);
             sqlOperation.AddVarcharParam("R_TRANSPORTUNITE", route.TransportUnit);
@@ -53,8 +53,8 @@ namespace DataAccess
         {
             var route = baseDTO as Route;
 
-            var sqlOperation = new SqlOperation { ProcedureName = "DELETE_ROUTE" };
-            sqlOperation.AddIntParam("R_IDROUTE", route.Id);
+            var sqlOperation = new SqlOperation { ProcedureName = "DEL_ROUTE" };
+            sqlOperation.AddIntParam("R_IDROUTE", route.IdRoute);
 
             _dao.ExecuteProcedure(sqlOperation);
 
