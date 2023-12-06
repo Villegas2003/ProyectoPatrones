@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace DTOs
 {
-    public class Product : BaseDTO
+    public class Product : BaseDTO 
     {
        public int IdProduct { get; set; }
         public string? Name { get; set; }
         public int Price { get; set; }
         public string? Parts { get; set; }
         public string? Category { get; set; }
+
+        public void Log()
+        {
+
+        }
     }
 }

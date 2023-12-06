@@ -1,4 +1,5 @@
 ﻿ using DataAccess;
+using DataAccess.CRUD;
 using DTOs;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,19 @@ namespace CoreApp
 {
     public class ProductManager
     {
+        private readonly ITarget _productAdapter;
+        private ProductCRUDFactory productAdapter;
+
+        public ProductManager(ITarget productAdapter)
+        {
+            _productAdapter = productAdapter;
+        }
+
+        public ProductManager(ProductCRUDFactory productAdapter)
+        {
+            this.productAdapter = productAdapter;
+        }
+
         public void Create(Product product)
         {
             if(product.Price == null)

@@ -1,12 +1,7 @@
 ﻿using DataAccess.CRUD;
 using DataAccess.DAOs;
 using DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
+
 
 namespace DataAccess
 {
@@ -50,7 +45,7 @@ namespace DataAccess
         {
             var carriers = baseDTO as Carriers;
 
-            var sqlOperation = new SqlOperation { ProcedureName = "DEL_CARRIERS " };
+            var sqlOperation = new SqlOperation { ProcedureName = "DEL_CARRIERS" };
             sqlOperation.AddIntParam("C_IdCarriers", carriers.IdCarriers);
 
             _dao.ExecuteProcedure(sqlOperation);
