@@ -4,60 +4,53 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
-    public class CitieCRUDController : ControllerBase
+    public class CarriersCrudController : ControllerBase
     {
-
         [HttpPost]
         [Route("Create")]
-        public async Task<IActionResult> Create(Product citie)
-        {
-            var um = new ProductManager();
+      public async Task<IActionResult> Create(Carriers carriers)
+      {
+            var um = new CarriersManager();
             try
             {
-                um.Create(citie);
-                return Ok(citie);
+                um.Create(carriers);
+                return Ok(carriers);
             }
-            catch (Exception ex)
+            catch (Exception ex) 
             {
                 return StatusCode(500, ex.Message);
             }
-            
-           
-        }
+      }
 
         [HttpDelete]
         [Route("Delete")]
-        public async Task<IActionResult> Delete(Product citie)
+        public async Task<IActionResult> Delete(Carriers carriers)
         {
-            var um = new ProductManager();
-
-            try 
+            var um = new CarriersManager();
+            try
             {
-                um.Delete(citie);
-                return Ok(citie);
-            }catch(Exception ex) 
+                um.Delete(carriers);
+                return Ok(carriers);
+            }catch (Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
-
-            
-            
         }
 
         [HttpPut]
         [Route("Update")]
-        public async Task<IActionResult> Update(Product citie)
+        public async Task<IActionResult> Update(Carriers carriers)
         {
-            var um = new ProductManager();
+            var um = new CarriersManager();
             try
             {
-                um.Update(citie);
-                return Ok(citie);
-            }
-            catch (Exception ex)
-            {
+                um.Update(carriers);
+                return Ok(carriers);
+            } catch (Exception ex) 
+            { 
                 return StatusCode(500, ex.Message);
             }
         }
@@ -68,13 +61,18 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new ProductManager();
+                var um = new CarriersManager();
                 return Ok(um.RetrieveAll());
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 return StatusCode(500, ex.Message);
             }
+
         }
+
+
+
+
     }
 }
