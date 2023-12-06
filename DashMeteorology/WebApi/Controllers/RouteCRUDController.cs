@@ -1,4 +1,5 @@
 ﻿using CoreApp;
+using DataAccess;
 using DTOs;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,9 +14,11 @@ namespace WebApi.Controllers
         [Route("Create")]
         public async Task<IActionResult> Create(DTOs.Route route)
         {
-            var um = new RouteManager();
+            
             try
             {
+                var routeAdapter = new RouteCRUDFactory();
+                var um = new RouteManager(routeAdapter);
                 um.Create(route);
                 return Ok(route);
             }
@@ -31,9 +34,11 @@ namespace WebApi.Controllers
         [Route("Delete")]
         public async Task<IActionResult> Delete(DTOs.Route route)
         {
-            var um = new RouteManager();
+
             try
             {
+                var routeAdapter = new RouteCRUDFactory();
+                var um = new RouteManager(routeAdapter);
                 um.Delete(route);
                 return Ok(route);
             }catch (Exception ex)
@@ -48,9 +53,11 @@ namespace WebApi.Controllers
         [Route("Update")]
         public async Task<IActionResult> Update(DTOs.Route route)
         {
-            var um = new RouteManager();
+
             try
             {
+                var routeAdapter = new RouteCRUDFactory();
+                var um = new RouteManager(routeAdapter);
                 um.Update(route);
                 return Ok(route);
             }
@@ -66,7 +73,8 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new RouteManager();
+                var routeAdapter = new RouteCRUDFactory();
+                var um = new RouteManager(routeAdapter);
                 return Ok(um.RetrieveAll());
             }
             catch (Exception ex)

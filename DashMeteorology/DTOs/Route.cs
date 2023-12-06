@@ -16,5 +16,10 @@ namespace DTOs
         public string TransportUnit { get; set; }
         public string Startpoint { get; set; }
         public string Finalpoint { get; set; }
+
+        public void Log()
+        {
+
+        }
     }
 }

@@ -1,6 +1,8 @@
 ﻿using CoreApp;
+using DataAccess;
 using DTOs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace WebApi.Controllers
 {
@@ -13,9 +15,11 @@ namespace WebApi.Controllers
         [Route("Create")]
       public async Task<IActionResult> Create(Carriers carriers)
       {
-            var um = new CarriersManager();
+            
             try
             {
+                var carriersAdapter = new CarriersCRUDFactory();
+                var um = new CarriersManager(carriersAdapter);
                 um.Create(carriers);
                 return Ok(carriers);
             }
@@ -29,9 +33,11 @@ namespace WebApi.Controllers
         [Route("Delete")]
         public async Task<IActionResult> Delete(Carriers carriers)
         {
-            var um = new CarriersManager();
+
             try
             {
+                var carriersAdapter = new CarriersCRUDFactory();
+                var um = new CarriersManager(carriersAdapter);
                 um.Delete(carriers);
                 return Ok(carriers);
             }catch (Exception ex)
@@ -44,9 +50,11 @@ namespace WebApi.Controllers
         [Route("Update")]
         public async Task<IActionResult> Update(Carriers carriers)
         {
-            var um = new CarriersManager();
+
             try
             {
+                var carriersAdapter = new CarriersCRUDFactory();
+                var um = new CarriersManager(carriersAdapter);
                 um.Update(carriers);
                 return Ok(carriers);
             } catch (Exception ex) 
@@ -61,7 +69,8 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new CarriersManager();
+                var carriersAdapter = new CarriersCRUDFactory();
+                var um = new CarriersManager(carriersAdapter);
                 return Ok(um.RetrieveAll());
             }
             catch(Exception ex)

@@ -1,4 +1,5 @@
 using CoreApp;
+using DataAccess;
 using DTOs;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,9 +14,11 @@ namespace WebApi.Controllers
         [Route("Create")]
         public async Task<IActionResult> Create(Product product)
         {
-            var um = new ProductManager();
+            
             try
             {
+                var productAdapter = new ProductCRUDFactory();
+                var um = new ProductManager(productAdapter);
                 um.Create(product);
                 return Ok(product);
             }
@@ -31,10 +34,11 @@ namespace WebApi.Controllers
         [Route("Delete")]
         public async Task<IActionResult> Delete(Product product)
         {
-            var um = new ProductManager();
 
             try 
             {
+                var productAdapter = new ProductCRUDFactory();
+                var um = new ProductManager(productAdapter);
                 um.Delete(product);
                 return Ok(product);
             }catch(Exception ex) 
@@ -50,9 +54,10 @@ namespace WebApi.Controllers
         [Route("Update")]
         public async Task<IActionResult> Update(Product product)
         {
-            var um = new ProductManager();
             try
             {
+                var productAdapter = new ProductCRUDFactory();
+                var um = new ProductManager(productAdapter);
                 um.Update(product);
                 return Ok(product);
             }
@@ -68,7 +73,8 @@ namespace WebApi.Controllers
         {
             try
             {
-                var um = new ProductManager();
+                var productAdapter = new ProductCRUDFactory();
+                var um = new ProductManager(productAdapter);
                 return Ok(um.RetrieveAll());
             }
             catch (Exception ex)

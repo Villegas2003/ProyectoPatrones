@@ -1,6 +1,5 @@
-﻿
-
-using DataAccess;
+﻿using DataAccess;
+using DataAccess.CRUD;
 using DTOs;
 using System;
 using System.Collections.Generic;
@@ -10,12 +9,25 @@ using System.Security;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using System.Xml.Linq;
 
 namespace CoreApp
 {
     public class CarriersManager
     {
+        private readonly ITarget _carriersAdapter;
+        private CarriersCRUDFactory carriersAdapter;
+
+        public CarriersManager(ITarget carriersAdapter)
+        {
+            _carriersAdapter = carriersAdapter;
+        }
+
+        public CarriersManager(CarriersCRUDFactory carriersAdapter)
+        {
+            this.carriersAdapter = carriersAdapter;
+        }
 
         public void Create(Carriers carriers) 
         {

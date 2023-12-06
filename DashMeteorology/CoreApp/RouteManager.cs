@@ -7,11 +7,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
+using DataAccess.CRUD;
 
 namespace CoreApp
 {
     public class RouteManager
     {
+        private readonly ITarget _routeAdapter;
+        private RouteCRUDFactory routeAdapter;
+
+        public RouteManager(ITarget routeAdapter)
+        {
+            _routeAdapter = routeAdapter;
+        }
+
+        public RouteManager(RouteCRUDFactory routeAdapter)
+        {
+            this.routeAdapter = routeAdapter;
+        }
 
         public void Create(Route route)
         {
