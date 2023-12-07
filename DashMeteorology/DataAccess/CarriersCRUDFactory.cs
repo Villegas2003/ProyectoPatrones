@@ -57,9 +57,34 @@ namespace DataAccess
             throw new NotImplementedException();
         }
 
-        public override List<T> RetrieveAll<T>()
+       public override List<T> RetrieveAll<T>()
         {
-            throw new NotImplementedException();
-        }
+            throw new Exception();
+        }   
+        //var lstCarriers = new List<T>();
+
+        //    var sqlOperation = new SqlOperation { ProcedureName = "RET_ALL_CARRIER" };
+
+        //    var lstResults = _dao.ExecuteQueryProcedure(sqlOperation);
+        //    if(lstCarriers.Count > 0)
+        //    {
+        //        foreach(var row in lstResults)
+        //        {
+        //            var carrierDTO = BuildUser<T>(row);
+        //            lstCarriers.Add(carrierDTO);
+        //        }
+        //    }
+
+        //    return lstCarriers;
+        //}
+
+        //private T BuildUser<T>(Dictionary<string, object> row)
+        //{
+        //    var carrierDTO = new Carriers();
+        //    {
+        //        id = (int)row["IdCarriers"],
+        //        Name = (string)row[]
+        //    }
+        //}
     }
 }

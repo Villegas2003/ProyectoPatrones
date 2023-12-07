@@ -1,0 +1,174 @@
+﻿@page "/"
+@model WebApp.Pages.LandingPageModel
+@{
+}
+<link href="~/css/ladingpage.css" rel="stylesheet" />
+<main>
+<body>
+    <header class="section__container header__container">
+        <nav>
+            <div class="nav__bar">
+                <div class="nav__logo">
+                    <a asp-page="/LandingPage"></a><img src="~/img/logoempresa.png" />
+                </div>
+            </div>
+            <div class="nav__btn">
+                <span><i class="ri-shopping-bg-line"></i></span>
+            </div>
+        </nav>
+        <div class="header__content">
+            <h1><span>LACA</span></h1>
+            <p class="section__description">
+                Welcome to our LACA page, we offer parcel services to all of Latin America, with us you will have the best option to bring your packages to the door of your house.
+            </p>
+            <button class="btn">
+                <span><i class="ri-add-line"></i></span> <a asp-page="/Login">Log In</a>
+            </button>
+        </div>
+    </header>
+
+    <section class="trending__container">
+        <div class="section__container trending__header">
+            <div class="section__nav">
+                <span><i class="ri-arrow-left-s-line"></i></span>
+                <span><i class="ri-arrow-left-s-line"></i></span>
+            </div>
+            <h2 class="section__header"><span>Services</span></h2>
+        </div>
+        <div class="swiper trending__swiper">
+            <div class="swipper-wrapper">
+                <div class="swiper-slide trending__swiper-slide">
+                    <div class="trending__card">
+                        <img src="~/img/telefonos.jpg" alt="trending" />
+                    </div>
+                </div>
+                <div class="swiper-slide trending__swiper-slide">
+                    <div class="trending__card">
+                        <img src="~/img/ropa.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-slide trending__swiper-slide">
+                    <div class="trending__card">
+                        <img src="~/img/libros.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-slide trending__swiper-slide">
+                    <div class="trending__card">
+                        <img src="~/img/jueguetes.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container why__container">
+        <div class="why__image">
+            <img src="~/img/contenedores.jpg" alt="why image"/>
+        </div>
+        <div class="why__content">
+            <h2 class="section__header">Why Choose<br /><sapn>LACA</sapn></h2>
+            <p class="section__description">
+                At Laca our priority is the security of your delivery, from the moment your package arrives at our warehouses until our transport managers deliver your package, ensuring that your package and our services are carried out in the best way.
+            </p>
+            <button class="btn">
+                <span><i class="ri-add-line"></i></span> Explore More
+            </button>
+        </div>
+    </section>
+
+    <section class="section__container story__container">
+        <div class="story__content">
+            <h2 class="section__header">LACA<br />Stories</h2>
+            <p class="section__description">
+                Hear the stories of our satisfied customers
+            </p>
+            <div class="section__nav">
+                <span><i class="ri-arrow-left-s-line"></i></span>
+                <span><i class="ri-arrow-rigth-s-line"></i></span>
+            </div>
+        </div>
+        <div class="story__card">
+            <img src="~/img/history-1.jpg" alt="story"/>
+            <div class="story__card__content">
+                <p class="section__description">
+                    I recently requested the shipment of my new iPhone through LACA services, and it was the best transportation solution, they were responsible with the delivery and super careful.
+                </p>
+                <button class="btn">
+                    <span><i class="ri-add-line"></i></span>Explore More
+                </button>
+            </div>
+        </div>
+        <div class="story__card">
+            <img src="~/img/story-2.jpg" alt="story"/>
+            <div class="story__card__content">
+                <p class="section__description">
+                    I ordered these clothes online, and I am super happy since they arrived even before time, I completely recommend the LACA service.
+                </p>
+                <button class="btn">
+                    <span><i class="ri-add-line"></i></span>Explore More
+                </button>
+            </div>
+        </div>
+        <div class="story__card">
+            <img src="~/img/story-3.jpg" alt="story"/>
+            <div class="story__card__content">
+                <p class="section__description">
+                    I bought toys for my son and nephews and requested transportation through LACA, and it was the best option I could have taken. They had a great responsibility when it came to making the delivery.
+                </p>
+                <button class="btn">
+                    <span><i class="ri-add-line"></i></span>Explore More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container">
+        <div class="banner__container">
+            <div class="banner__image">
+                <img src="~/img/entrega.jpg" alt="banner"/>
+            </div>
+            <div class="banner__content">
+                <h2 class="section__header">
+                    Receive up to <span>15%</span> discount on your deliveries
+                </h2>
+                <button class="btn">
+                    <span><i class="ri-add-line"></i></span>Order Now
+                </button>
+                <img src="" alt="banner bg" class="banner__bg" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="section__container footer__container">
+        <div class="footer__col">
+            <div class="footer__logo">
+                <a href="#"><img src="~/img/logoempresa.png" alt="logo"/></a>
+            </div>
+            <div class="footer__socials">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-pinterest-line"></i></a>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+            </div>
+        </div>
+        <div class="footer__col">
+            <h4>Customer Support</h4>
+            <p>
+                Got questions or need assistance? Our dedicated customer support team
+                is here to help! Contact LACA via phone or email for any inquiries,
+                order tracking, or product assistance.
+            </p>
+        </div>
+        <div class="footer__col">
+            <h4>Company Information</h4>
+            <p>
+                Learn more about our mission, values ​​and commitment to quality.
+                Explore our company LACA and discover how we are making a positive impact
+                in package delivery throughout Latin America
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</main>

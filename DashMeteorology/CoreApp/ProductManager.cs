@@ -56,10 +56,8 @@ namespace CoreApp
         public object? RetrieveAll()
         {
 
-            throw new Exception("Hola mundo;)");
-            var pm = new ProductCRUDFactory();
-            
-            return pm.RetrieveAll<Product>();
+            var vc = new ProductCRUDFactory();
+            return vc.RetrieveAll<Product>();
         }
     }
 }
