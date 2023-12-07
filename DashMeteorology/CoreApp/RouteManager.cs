@@ -83,9 +83,8 @@ namespace CoreApp
 
         public object? RetrieveAll()
         {
-            throw new Exception();
-           /* var ct = new ForeCastCRUDFactory();
-            return ct.RetrieveAll<Route>();*/
+            var vc = new RouteCRUDFactory();
+            return vc.RetrieveAll<Route>();
         }
 
     }

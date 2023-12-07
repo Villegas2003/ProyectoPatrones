@@ -1,0 +1,66 @@
+﻿@page
+@model WebApp.Pages.CurrentDataModel
+@{
+}
+<script src="~/js/pages/Carriers.js"></script>
+<div class="bs-docs-section">
+@*     <br />
+
+    <div class="row">
+        <legend>CurrenData List</legend>
+        <div class="col-lg-12">
+
+            <table id="tblListCurrentData" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>TimeStamp</th>
+                        <th>Temperature</th>
+                        <th>Humidity</th>
+                        <th>Condition</th>
+                        <th>WindSpeed</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div> *@
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="bs-component">
+                <form>
+                    <fieldset>
+                        <legend>Carriers registration form</legend>
+
+                        <div class="form-group">
+                            <label for="numid" class="form-label mt-4">IdCarriers</label>
+                            <input id="numid" type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter id">
+
+
+                            <label for="txtName" class="form-label mt-4">Name</label>
+                            <input id="txtName" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter name">
+
+
+                            <label for="numVehicle" class="form-label mt-4">Vehicle</label>
+                            <input type="number" class="form-control" id="numVehicle" aria-describedby="emailHelp" placeholder="Enter Vehicle">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtType" class="form-label mt-4">Type Vehicle</label>
+                            <input type="text" class="form-control" id="txtType" aria-describedby="emailHelp" placeholder="Enter Type Vehicle">
+                        </div>
+                        <div class="form-group">
+                            <label for="numAbility" class="form-label mt-4">Ability</label>
+                            <input type="number" class="form-control" id="numAbility" aria-describedby="emailHelp" placeholder="Enter Ability">
+                        </div>
+
+                </form>
+                <br />
+                <button id="btnCreateCarrier" class="source-button btn btn-primary btn-xs" type="button" tabindex="0"><i class="bi bi-code">Save</i></button>
+
+                <button id="btnUpdateCarrier" class="source-button btn btn-warning btn-xs" type="button" tabindex="0"><i class="bi bi-code">Update</i></button>
+
+                <button id="btnDeleteCarrier" class="source-button btn btn-danger btn-xs" type="button" tabindex="0"><i class="bi bi-code">Delete</i></button>
+            </div>
+        </div>
+    </div>
+</div>

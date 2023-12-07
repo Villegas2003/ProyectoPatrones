@@ -1,0 +1,73 @@
+﻿@page
+@model WebApp.Pages.HistoryModel
+@{
+}
+<script src="~/js/pages/Route.js"></script>
+<div class="bs-docs-section">
+    <br />
+
+@*     <div class="row">
+        <legend>History List</legend>
+        <div class="col-lg-12">
+
+            <table id="tblListHistory" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Date</th>
+                        <th>Max Temperature</th>
+                        <th>Min Temperature</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div> *@
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="bs-component">
+                <form>
+                    <fieldset>
+                        <legend>Route registration form</legend>
+
+                        <div class="form-group">
+                            <label for="txtId" class="form-label mt-4">Route ID</label>
+                            <input id="txtId" type="number" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+
+
+                            <label for="txtOrigen" class="form-label mt-4">Origin</label>
+                            <input type="text" class="form-control" id="txtOrigen" aria-describedby="emailHelp" placeholder="Enter Origin">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDestination" class="form-label mt-4">Destination</label>
+                            <input type="text" class="form-control" id="txtDestination" aria-describedby="emailHelp" placeholder="Enter Destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDistance" class="form-label mt-4">Distance</label>
+                            <input type="text" class="form-control" id="txtDistance" aria-describedby="emailHelp" placeholder="Enter Destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtTransport" class="form-label mt-4">TransportUnite</label>
+                            <input type="text" class="form-control" id="txtTransport" aria-describedby="emailHelp" placeholder="Enter TransportUnit">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtStarPoint" class="form-label mt-4">StarPoint</label>
+                            <input type="text" class="form-control" id="txtStarPoint" aria-describedby="emailHelp" placeholder="Enter StarPoint">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtFinalPoint" class="form-label mt-4">FinalPoint</label>
+                            <input type="text" class="form-control" id="txtFinalPoint" aria-describedby="emailHelp" placeholder="Enter FinalPoint">
+                        </div>
+
+                </form>
+                <br />
+                <button id="btnCreateRoute" class="source-button btn btn-primary btn-xs" type="button" tabindex="0"><i class="bi bi-code">Save</i></button>
+
+                <button id="btnUpdateRoute" class="source-button btn btn-warning btn-xs" type="button" tabindex="0"><i class="bi bi-code">Update</i></button>
+
+                <button id="btnDeleteRoute" class="source-button btn btn-danger btn-xs" type="button" tabindex="0"><i class="bi bi-code">Delete</i></button>
+            </div>
+        </div>
+    </div>
+</div>

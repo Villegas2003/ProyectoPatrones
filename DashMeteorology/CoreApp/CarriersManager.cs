@@ -79,10 +79,8 @@ namespace CoreApp
 
         public object? RetrieveAll()
         {
-            /*var ct = new CurrentDataCRUDFactory();
-
-            return ct.RetrieveAll<CurrentDataDTO>();*/
-            throw new NotImplementedException();
+            var vc = new CarriersCRUDFactory();
+            return vc.RetrieveAll<Carriers>();
         }
     }
 
